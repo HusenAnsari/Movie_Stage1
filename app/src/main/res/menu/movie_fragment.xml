@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_by_pop"
+            android:title="@string/action_sort_by_popularity"
+            android:checked="true"/>
+        <item
+            android:id="@+id/sort_by_rate"
+            android:title="@string/action_sort_by_rating" />
+
+
+
+    </group>
+
+
+
+</menu>
+
+
+
+
+
+
+
+

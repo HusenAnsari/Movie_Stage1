@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="husenansari.com.movie_stage1.Movie_Detail"
+    tools:showIn="@layout/activity_movie__detail">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/TitlePlaceHolder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary_dark">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Movie_Title" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/poster"
+            style="@style/MoviePadding"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/TitlePlaceHolder"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/release"
+            style="@style/MoviePadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/poster"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <TextView
+            android:id="@+id/ratings"
+            style="@style/MoviePadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_toRightOf="@id/poster"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/MoviePadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poster"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
