@@ -135,7 +135,7 @@ public class MainActivityFragment extends Fragment {
             final String SORT_BY="?sort_by="+params[0]+".desc";
             final String SORT_BY_POP="?sort_by=popularity.desc";
             final String SORT_BY_RATINGS="?sort_by=vote_average.desc";
-            final String API_KEY="&api_key=API KEY PUT HERE";
+            final String API_KEY="&api_key=67d7b19e6283aefb8cd9ea32914cea7f";
             String path=BASE_URL+DISCOVER+BY_MOVIE+SORT_BY+API_KEY;
 
             try{
